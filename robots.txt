@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lischor.online/argenta/corespare/sitemap.xml
