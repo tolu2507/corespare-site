@@ -77,6 +77,10 @@
         aria-label="Go to Hero"></button>
       <button
         class="dock-item"
+        data-target="hero-contd"
+        aria-label="Go to Hero-Contd"></button>
+      <button
+        class="dock-item"
         data-target="1"
         aria-label="Go to About"></button>
       <button
@@ -107,13 +111,34 @@
         data-index="0"
         data-theme="hero">
         <div class="hero-content">
-          <p class="eyebrow">OÜ CoreSpare · Estonia</p>
-          <h1>The Core of Spare Parts. Precision in Every Shipment.</h1>
-          <p class="lead">
-            Premium sourcing and reliable logistics for essential MRO spare
-            parts and industrial components across Estonia and EU trade
-            corridors.
+          <p class="eyebrow">CoreSpare OÜ · Estonia</p>
+          <h1>CoreSpare OÜ - Reliable Core MRO Solutions</h1>
+          <p class="subhead">
+            Essential spare parts and MRO components for industrial, logistics,
+            and infrastructure operations across Europe.
           </p>
+
+          <div class="hero-intro">
+            <p>
+              CoreSpare OÜ is an Estonia-based trading and supply company
+              specializing in core spare parts and MRO (Maintenance, Repair and
+              Operations) components. We focus on reliable sourcing,
+              standardized nomenclature, and stable supply of essential parts
+              required for uninterrupted operations.
+            </p>
+            <p class="approach">
+              <strong>Our approach is simple:</strong><br />clear
+              specifications, verified suppliers, and predictable logistics.
+            </p>
+          </div>
+
+          <ul class="hero-highlights">
+            <li>Core spare parts and MRO components</li>
+            <li>European suppliers and logistics partners</li>
+            <li>Transparent sourcing and documentation</li>
+            <li>Flexible B2B cooperation models</li>
+          </ul>
+
           <div class="hero-actions">
             <a href="./contact/#inquiry" class="btn btn-gold"
               >Request a Quote</a
@@ -125,6 +150,7 @@
               >Explore Categories</a
             >
           </div>
+
           <div class="trust-row">
             <div><strong>24h</strong><span>Initial response</span></div>
             <div><strong>1200+</strong><span>Core SKUs</span></div>
@@ -145,17 +171,34 @@
       <section class="panel" data-index="1" data-theme="about">
         <div class="section-content about-layout">
           <div class="about-copy">
-            <p class="eyebrow">Who We Are</p>
-            <h2>Industrial sourcing with executive discipline.</h2>
+            <p class="eyebrow">Who we are</p>
             <p>
-              CoreSpare is built for buyers who value consistency, traceability
-              and speed. We focus on essential components that protect uptime
-              and simplify procurement decisions.
+              CoreSpare OÜ is a trading company registered in Estonia, operating
+              in the field of industrial spare parts and MRO supplies.
             </p>
+
             <p>
-              We combine responsive procurement, supplier validation and clear
-              logistics communication so your teams stay operational.
+              We work with manufacturers, logistics operators, industrial
+              facilities, and service companies that require consistent access
+              to essential spare parts rather than complex or highly customized
+              solutions.
             </p>
+
+            <h3>Our philosophy</h3>
+            <p>
+              We focus on the “core” - the parts that keep operations running
+              every day.<br />No excess complexity. No unnecessary
+              intermediaries.<br />Only practical solutions, clear
+              communication, and reliable execution.
+            </p>
+
+            <h3>What differentiates us</h3>
+            <ul class="about-diff">
+              <li>Focus on core and fast-moving spare parts</li>
+              <li>Supplier verification and product compliance</li>
+              <li>Clear commercial terms and documentation</li>
+              <li>Long-term cooperation mindset</li>
+            </ul>
           </div>
           <div class="about-gallery-wrap">
             <div
@@ -220,37 +263,31 @@
 
       <section class="panel" data-index="2" data-theme="categories">
         <div class="section-content">
-          <p class="eyebrow">Core Categories</p>
-          <h2>Portfolio built around operational continuity.</h2>
-          <div class="carousel" aria-label="Core categories carousel">
-            <div class="carousel-track" id="carouselTrack">
-              <article class="carousel-card">
-                <span class="category-icon" aria-hidden="true">🧰</span>
-                <h3>MRO Basics</h3>
-                <p>Daily-use consumables and dependable essentials.</p>
-              </article>
-              <article class="carousel-card">
-                <span class="category-icon" aria-hidden="true">⚙️</span>
-                <h3>Power Transmission</h3>
-                <p>Bearings, belts, couplings and drive elements.</p>
-              </article>
-              <article class="carousel-card">
-                <span class="category-icon" aria-hidden="true">🔌</span>
-                <h3>Electrical Control</h3>
-                <p>Switches, relays, connectors and control components.</p>
-              </article>
-              <article class="carousel-card">
-                <span class="category-icon" aria-hidden="true">🧷</span>
-                <h3>Seals & Fasteners</h3>
-                <p>Industrial-grade sealing and fastening systems.</p>
-              </article>
-              <article class="carousel-card">
-                <span class="category-icon" aria-hidden="true">🚚</span>
-                <h3>On-Demand Sourcing</h3>
-                <p>Urgent, hard-to-find items sourced intelligently.</p>
-              </article>
-            </div>
-          </div>
+          <p class="eyebrow">Our Products</p>
+          <h2>Product scope and supply approach.</h2>
+
+          <p>
+            Product Scope: CoreSpare OÜ focuses on essential spare parts and MRO
+            components, including but not limited to:
+          </p>
+
+          <ul class="product-list">
+            <li>Mechanical spare parts</li>
+            <li>Industrial consumables</li>
+            <li>Logistics &amp; handling components</li>
+            <li>Standardized replacement parts</li>
+            <li>Core MRO maintenance items</li>
+          </ul>
+
+          <p>
+            Products are supplied based on technical specifications, part
+            numbers, and agreed quality standards.
+          </p>
+
+          <p class="product-intro">
+            Note: Exact product lists are formed individually depending on
+            client requirements and supply contracts.
+          </p>
         </div>
       </section>
 
@@ -260,67 +297,75 @@
         data-theme="categories-grid"
         id="all-categories">
         <div class="section-content">
-          <p class="eyebrow">All Categories</p>
-          <h2>View every category at a glance.</h2>
+          <p class="eyebrow">Our Services</p>
+          <h2>Core services for operational continuity.</h2>
           <div class="categories-grid">
             <article class="category-tile">
-              <span class="category-tile-icon" aria-hidden="true">🧰</span>
-              <h3>MRO Basics</h3>
-              <p>
-                Consumables, tapes, lubricants and routine shop-floor
-                essentials.
-              </p>
-            </article>
-            <article class="category-tile">
-              <span class="category-tile-icon" aria-hidden="true">⚙️</span>
-              <h3>Bearings</h3>
-              <p>
-                Ball, roller and specialty bearing solutions for continuous
-                uptime.
-              </p>
-            </article>
-            <article class="category-tile">
-              <span class="category-tile-icon" aria-hidden="true">🔩</span>
-              <h3>Power Transmission</h3>
-              <p>
-                Belts, chains, couplings and drive components for industrial
-                lines.
-              </p>
-            </article>
-            <article class="category-tile">
-              <span class="category-tile-icon" aria-hidden="true">🔌</span>
-              <h3>Electrical Control</h3>
-              <p>Relays, contactors, terminals and control-panel components.</p>
-            </article>
-            <article class="category-tile">
-              <span class="category-tile-icon" aria-hidden="true">🛡️</span>
-              <h3>Seals & Gaskets</h3>
-              <p>Sealing systems for pressure stability and leak prevention.</p>
-            </article>
-            <article class="category-tile">
               <span class="category-tile-icon" aria-hidden="true">🔧</span>
-              <h3>Fasteners</h3>
+              <h3>MRO Sourcing and Supply</h3>
               <p>
-                Industrial bolts, anchors, washers and precision assembly
-                hardware.
+                We source and supply core MRO components and spare parts
+                according to client specifications, technical requirements, and
+                operational needs.
               </p>
             </article>
             <article class="category-tile">
-              <span class="category-tile-icon" aria-hidden="true">💧</span>
-              <h3>Pneumatics & Hydraulics</h3>
+              <span class="category-tile-icon" aria-hidden="true">🧰</span>
+              <h3>Spare Parts Trading</h3>
               <p>
-                Valves, fittings and flow-control components for process
-                reliability.
+                Procurement and resale of standardized spare parts for
+                industrial equipment, logistics systems, and infrastructure
+                facilities.
+              </p>
+            </article>
+            <article class="category-tile">
+              <span class="category-tile-icon" aria-hidden="true">🤝</span>
+              <h3>Supplier Coordination</h3>
+              <p>
+                We work with a network of manufacturers and distributors to
+                ensure availability, consistency, and documentation compliance.
+              </p>
+            </article>
+            <article class="category-tile">
+              <span class="category-tile-icon" aria-hidden="true">🚚</span>
+              <h3>Logistics & Delivery Coordination</h3>
+              <p>
+                Coordination of shipments within Europe and internationally,
+                including export documentation where required.
+              </p>
+            </article>
+            <article class="category-tile">
+              <span class="category-tile-icon" aria-hidden="true">📄</span>
+              <h3>B2B Contract Support</h3>
+              <p>
+                Support for long-term supply contracts, framework agreements,
+                and recurring deliveries.
+              </p>
+            </article>
+            <!-- <article class="category-tile">
+              <span class="category-tile-icon" aria-hidden="true">⚡</span>
+              <h3>On-Demand Sourcing</h3>
+              <p>
+                Rapid sourcing for urgent or hard-to-find items through
+                validated partners.
+              </p>
+            </article>
+            <article class="category-tile">
+              <span class="category-tile-icon" aria-hidden="true">🔍</span>
+              <h3>Supplier Validation</h3>
+              <p>
+                Supplier verification and product compliance checks to reduce
+                supply risk.
               </p>
             </article>
             <article class="category-tile">
               <span class="category-tile-icon" aria-hidden="true">📦</span>
-              <h3>On-Demand Sourcing</h3>
+              <h3>Inventory & Replenishment</h3>
               <p>
-                Hard-to-find references sourced quickly through validated
-                suppliers.
+                Assistance with stock planning and recurring replenishment to
+                minimise downtime.
               </p>
-            </article>
+            </article> -->
           </div>
         </div>
       </section>
@@ -374,7 +419,7 @@
     <footer class="legal-links">
       <a href="./privacy-policy/">Privacy Policy</a>
       <a href="./user-agreement/">User Agreement</a>
-      <a href="./cookies/">Cookies</a>
+      <!-- <a href="./cookies/">Cookies</a> -->
     </footer>
 
     <script src="./script.js"></script>
