@@ -34,31 +34,44 @@ body {
 
 .brand-mark {
   position: fixed;
-  top: 0.9rem;
-  right: clamp(0.8rem, 2vw, 1.8rem);
-  z-index: 20;
-  display: inline-flex;
+  top: 1.1rem;
+  right: clamp(1rem, 3vw, 2.5rem);
+  z-index: 100;
+  display: flex;
   align-items: center;
-  gap: 0.72rem;
+  justify-content: center;
   text-decoration: none;
-  color: #e6edf5;
-  font: 800 1.08rem/1 "Manrope", "Inter", sans-serif;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 0.82rem 1.14rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  background: rgba(255, 255, 255, 0.08);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  width: 180px;
+  height: 80px;
+  border-radius: 40px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 400ms var(--ease-premium);
+}
+
+.brand-mark:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms var(--ease-premium);
+}
+
+.brand-mark:hover .brand-logo {
+  transform: scale(1.04);
 }
 
 .brand-dot {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--gold-soft), var(--blue));
-  box-shadow: 0 0 0 7px rgba(255, 255, 255, 0.08);
+  display: none;
+  /* Removed as we use the image logo */
 }
 
 body.contact-page {
@@ -1417,7 +1430,7 @@ h3 {
     filter: none;
     transform: none;
     pointer-events: auto;
-    padding: 0.7rem 0.2rem 1.2rem 0.2rem;
+    padding: 4.8rem 1rem 2rem 1rem;
   }
 
   .glass-dock {
@@ -1437,17 +1450,17 @@ h3 {
   }
 
   .brand-mark {
-    top: 0.3rem;
-    right: 0.3rem;
-    font-size: 0.92rem;
-    padding: 0.48rem 0.7rem;
-    gap: 0.38rem;
+    top: 0.6rem;
+    right: 0.8rem;
+    width: 90px;
+    height: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.12);
   }
 
   .brand-dot {
-    width: 13px;
-    height: 13px;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+    display: none;
   }
 
   .page-shell {
