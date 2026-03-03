@@ -1438,7 +1438,12 @@ h3 {
   }
 
   .legal-links {
-    display: none;
+    position: static;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 3rem;
+    background: transparent;
   }
 
   .dock-item::before {
