@@ -352,7 +352,7 @@ if (inquiryForm && formNote) {
       params.set("cc", email);
     }
 
-    window.location.href = `mailto:inquiry@corespare.ee?${params.toString()}`;
+    window.location.href = `mailto:info@corespare.ee?${params.toString()}`;
 
     formNote.textContent =
       "Your email app has been opened with the inquiry details. Send the draft to complete submission.";
