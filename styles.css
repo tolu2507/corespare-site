@@ -1289,15 +1289,44 @@ h3 {
 
 .legal-links {
   position: fixed;
-  bottom: 1.1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: inline-flex;
-  gap: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.2rem clamp(1rem, 3vw, 2.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
   z-index: 16;
+  background: linear-gradient(to top, rgba(15, 20, 26, 0.8), transparent);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
-.legal-links a {
+.footer-company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.footer-company-info span {
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+}
+
+.footer-company-info strong {
+  color: var(--gold-soft);
+  font-weight: 600;
+}
+
+.legal-nav {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.legal-nav a {
   text-decoration: none;
   color: #b9c5d2;
   font-size: 0.74rem;
@@ -1306,7 +1335,7 @@ h3 {
   transition: color 220ms var(--ease-soft);
 }
 
-.legal-links a:hover {
+.legal-nav a:hover {
   color: #e9eef5;
 }
 
@@ -1314,9 +1343,13 @@ h3 {
   position: relative;
   left: auto;
   bottom: auto;
+  right: auto;
   transform: none;
-  margin: 1.5rem auto 0;
-  justify-content: center;
+  margin: 3rem auto 0;
+  padding: 2rem 0;
+  background: transparent;
+  backdrop-filter: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @keyframes floatA {
@@ -1440,10 +1473,23 @@ h3 {
   .legal-links {
     position: static;
     transform: none;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 0 3rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 3rem 1.5rem;
     background: transparent;
+    backdrop-filter: none;
+  }
+
+  .footer-company-info {
+    order: 2;
+  }
+
+  .legal-nav {
+    order: 1;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .dock-item::before {
